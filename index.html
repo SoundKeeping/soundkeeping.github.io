@@ -1,10 +1,905 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoundKeeping</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Research profile of Richard Yanaky, an interaction researcher and designer working across HCI, soundscape, immersive systems, knowledge translation, and professional practice." name="description"/>
+<title>Richard Yanaky — Interaction Researcher and Designer</title>
+<link rel="canonical" href="https://soundkeeping.github.io/"/>
+<meta name="author" content="Richard Yanaky"/>
+<meta property="og:type" content="profile"/>
+<meta property="og:title" content="Richard Yanaky — Interaction Researcher and Designer"/>
+<meta property="og:description" content="Research profile of Richard Yanaky, an interaction researcher and designer working across HCI, soundscape, immersive systems, knowledge translation, and professional practice."/>
+<meta property="og:url" content="https://soundkeeping.github.io/"/>
+<meta property="og:image" content="https://soundkeeping.github.io/assets/icons/RY.jpg"/>
+<meta property="og:image:alt" content="Portrait of Richard Yanaky"/>
+<meta property="og:site_name" content="Richard Yanaky"/>
+<meta property="profile:first_name" content="Richard"/>
+<meta property="profile:last_name" content="Yanaky"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://soundkeeping.github.io/#profile",
+  "url": "https://soundkeeping.github.io/",
+  "name": "Richard Yanaky — Interaction Researcher and Designer",
+  "description": "Research profile of Richard Yanaky, an interaction researcher and designer working across HCI, soundscape, immersive systems, knowledge translation, and professional practice.",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://soundkeeping.github.io/#richard-yanaky",
+    "name": "Richard Yanaky",
+    "url": "https://soundkeeping.github.io/",
+    "image": "https://soundkeeping.github.io/assets/icons/RY.jpg",
+    "description": "Interaction researcher and designer working across HCI, soundscape, immersive systems, knowledge translation, and professional practice.",
+    "sameAs": [
+      "https://orcid.org/0000-0003-3534-5116",
+      "https://scholar.google.ca/citations?user=Tn1kFyMAAAAJ",
+      "https://www.researchgate.net/profile/Richard-Yanaky-2",
+      "https://ca.linkedin.com/in/richard-yanaky-22806464"
+    ],
+    "knowsAbout": [
+      "Human–soundscape interaction",
+      "Soundscape",
+      "Human-computer interaction",
+      "Interactive systems",
+      "Immersive systems",
+      "Virtual reality",
+      "Knowledge translation",
+      "Capacity building",
+      "Professional practice",
+      "Urban sound"
+    ],
+    "affiliation": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "McGill University",
+        "url": "https://www.mcgill.ca/"
+      },
+      {
+        "@type": "Organization",
+        "name": "McGill School of Information Studies",
+        "url": "https://www.mcgill.ca/sis/"
+      },
+      {
+        "@type": "Organization",
+        "name": "Multimodal Interaction Lab",
+        "url": "https://mil.mcgill.ca/"
+      },
+      {
+        "@type": "Organization",
+        "name": "Centre for Interdisciplinary Research in Music Media and Technology (CIRMMT)",
+        "url": "https://www.cirmmt.org/"
+      },
+      {
+        "@type": "Organization",
+        "name": "Sounds in the City",
+        "url": "https://www.sounds-in-the-city.org/"
+      },
+      {
+        "@type": "Organization",
+        "name": "AIRS thematic network",
+        "url": "https://airs.quebec/en/"
+      }
+    ]
+  }
+}
+</script>
+<link href="assets/icons/RY_Favicon/ry_favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="assets/icons/RY_Favicon/ry_favicon_16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="assets/icons/RY_Favicon/ry_favicon_32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/icons/RY_Favicon/ry_favicon_48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="assets/icons/RY_Favicon/ry_favicon_64.png" rel="icon" sizes="64x64" type="image/png"/>
+<link href="assets/icons/RY_Favicon/ry_apple_touch_180.png" rel="apple-touch-icon" sizes="180x180"/>
+<style>
+:root {
+  --deep-blue: #0F3B6E;
+  --slate-blue: #4F6B8A;
+  --blue-green: #2E7D7B;
+  --charcoal: #2B2B2B;
+  --border: #c9d2dc;
+  --soft: #f5f7f9;
+  --teal-soft: #eef7f6;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--charcoal);
+  font-family: Lato, "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.58;
+}
+a { color: var(--deep-blue); text-underline-offset: 3px; }
+a:hover { color: var(--blue-green); }
+main { width: 100%; }
+
+.skip-link {
+  position: fixed;
+  left: 16px;
+  top: -80px;
+  z-index: 2000;
+  padding: 10px 14px;
+  border: 2px solid var(--deep-blue);
+  background: #fff;
+  color: var(--deep-blue);
+  font-weight: 800;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 12px;
+}
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, .96);
+  backdrop-filter: blur(8px);
+}
+.site-nav-inner {
+  width: min(1180px, calc(100% - 80px));
+  min-height: 58px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.site-nav-brand {
+  color: var(--deep-blue);
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.site-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.site-nav-links a {
+  color: var(--charcoal);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.site-nav-links a:hover,
+.site-nav-links a:focus,
+.site-nav-brand:hover,
+.site-nav-brand:focus {
+  color: var(--blue-green);
+}
+.site-nav-project-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 0;
+}
+.site-nav-project-wordmark {
+  display: block;
+  width: 92px;
+  height: auto;
+  /* The source wordmark has transparent side padding. Pull its layout box
+     inward so the visible artwork aligns with the surrounding nav items. */
+  margin: 0 -8px;
+}
+.site-menu { display: none; position: relative; }
+.site-menu summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: var(--deep-blue);
+  font-size: 14px;
+  font-weight: 800;
+  list-style: none;
+}
+.site-menu summary::-webkit-details-marker { display: none; }
+.hamburger {
+  display: inline-flex;
+  width: 20px;
+  height: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hamburger span {
+  display: block;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+}
+.site-menu-panel {
+  position: absolute;
+  top: calc(100% + 15px);
+  right: 0;
+  min-width: 210px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(15, 59, 110, .12);
+}
+.site-menu-panel a {
+  display: block;
+  padding: 10px 12px;
+  color: var(--charcoal);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.site-menu-panel a:hover,
+.site-menu-panel a:focus {
+  background: var(--teal-soft);
+  color: var(--deep-blue);
+}
+
+.container {
+  width: min(1180px, calc(100% - 80px));
+  margin: 0 auto;
+  padding: 58px 0 36px;
+}
+.hero { margin: 0 0 34px; }
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 48px;
+  align-items: center;
+}
+.hero-copy { min-width: 0; }
+.hero-portrait {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 4 / 5;
+  justify-self: end;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f2f5f7 0%, #e5ebef 100%);
+  position: relative;
+}
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+h1 {
+  margin: 0 0 8px;
+  color: var(--deep-blue);
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.02;
+}
+.hero-identity {
+  max-width: 760px;
+  margin: 0 0 18px;
+  font-size: 19px;
+  line-height: 1.5;
+}
+.hero-email {
+  margin: -8px 0 18px;
+  color: var(--slate-blue);
+  font-size: 15px;
+}
+.hero-email a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+}
+
+.profile-icons {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.profile-icon-link {
+  display: inline-grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: #fff;
+}
+.profile-icon-link:hover, .profile-icon-link:focus {
+  border-color: var(--blue-green);
+  background: var(--teal-soft);
+  outline: 2px solid transparent;
+}
+.profile-icon-link img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  object-fit: contain;
+}
+
+.cv-profile-icon {
+  border-color: var(--deep-blue);
+}
+.cv-profile-icon img {
+  width: 26px;
+  height: 26px;
+}
+.section { margin: 0 0 46px; scroll-margin-top: 24px; }
+.section-title {
+  margin: 0 0 22px;
+  color: var(--deep-blue);
+  font-size: clamp(28px, 3vw, 39px);
+  line-height: 1.15;
+  font-weight: 700;
+}
+.section-intro { max-width: 930px; }
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 0 0 40px;
+}
+.affiliations {
+  margin-top: 18px;
+  color: var(--slate-blue);
+  font-size: 15px;
+}
+.affiliations strong { color: var(--charcoal); }
+.theme-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.theme-card {
+  position: relative;
+  padding: 26px 28px 24px 78px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+.theme-number {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--deep-blue);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+}
+.theme-card:nth-child(2) .theme-number { background: var(--blue-green); }
+.theme-card:nth-child(3) .theme-number { background: var(--slate-blue); }
+.theme-card:nth-child(4) .theme-number { background: var(--charcoal); }
+.theme-card h3, .emerging-card h3, 
+.city-card-wordmark {
+  display: block;
+  width: min(190px, 60vw);
+  height: auto;
+  margin: 0 0 14px -8px;
+}
+.city-card h3 {
+  margin: 0 0 12px;
+  color: var(--deep-blue);
+  font-size: 23px;
+  line-height: 1.25;
+}
+.theme-card p:last-child, .emerging-card p:last-child, .city-card p:last-child { margin-bottom: 0; }
+.theme-points { margin: 14px 0 0; padding-left: 22px; }
+.theme-points li { margin-bottom: 9px; }
+.theme-points li:last-child { margin-bottom: 0; }
+
+.city-ditty-related-research {
+  margin-top: 24px;
+  padding: 16px 18px;
+  border-left: 4px solid var(--blue-green);
+  background: var(--teal-soft);
+}
+.city-ditty-related-research-title {
+  margin: 0 0 8px;
+  color: var(--deep-blue);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+}
+.city-ditty-related-research ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.city-ditty-related-research li {
+  margin: 7px 0;
+}
+.city-ditty-related-research a {
+  font-weight: 700;
+}
+
+.city-card {
+  padding: 26px;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--blue-green);
+  background: var(--soft);
+}
+.city-cta { margin-top: 18px; font-weight: 800; }
+.city-ditty-publication-section { width: 100%; margin-bottom: 20px; }
+.city-ditty-publication-intro { max-width: 900px; margin-bottom: 22px; }
+.city-ditty-publication-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.city-ditty-publication-card {
+  scroll-margin-top: 28px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--deep-blue);
+  background: #fff;
+}
+.city-ditty-publication-type {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--blue-green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+.city-ditty-publication-card h3 {
+  margin: 0 0 10px;
+  color: var(--deep-blue);
+  font-size: 21px;
+  line-height: 1.28;
+}
+.city-ditty-publication-summary { margin: 0 0 12px; }
+.city-ditty-publication-meta {
+  margin: 0 0 12px;
+  color: var(--slate-blue);
+  font-size: 15px;
+  line-height: 1.45;
+}
+.city-ditty-publication-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px 14px;
+  margin-top: 14px;
+}
+.city-ditty-publication-link { font-weight: 800; }
+.city-ditty-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid var(--blue-green);
+  background: var(--teal-soft);
+  color: var(--deep-blue);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+.emerging-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.emerging-card {
+  position: relative;
+  padding: 26px 28px 24px 78px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+.emerging-marker {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--deep-blue);
+}
+.emerging-card:nth-child(2) .emerging-marker { background: var(--blue-green); }
+.emerging-card:nth-child(3) .emerging-marker { background: var(--slate-blue); }
+.emerging-card:nth-child(4) .emerging-marker { background: var(--charcoal); }
+.emerging-card h3 {
+  margin-top: 0;
+  font-size: 23px;
+}
+
+.site-footer {
+  width: min(1180px, calc(100% - 80px));
+  margin: 0 auto;
+  padding: 24px 0 30px;
+  border-top: 1px solid var(--border);
+  color: var(--slate-blue);
+  font-size: 14px;
+}
+.site-footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.site-footer-meta {
+  margin: 0;
+}
+.site-footer-name {
+  color: var(--charcoal);
+  font-weight: 700;
+}
+.site-footer-top {
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .site-nav-inner { width: min(100% - 40px, 1120px); }
+  .container { width: min(100% - 40px, 1120px); }
+  .hero-layout { grid-template-columns: minmax(0, 1fr) 220px; gap: 30px; }
+  .hero-portrait { max-width: 220px; }
+}
+
+@media (max-width: 760px) {
+  .site-nav-links { display: none; }
+  .site-menu { display: block; }
+  .city-ditty-publication-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 680px) {
+  .site-nav-inner { width: min(100% - 28px, 1120px); min-height: 54px; }
+  .site-nav-links { display: none; }
+  .site-menu { display: block; }
+  body { font-size: 16px; }
+  .container { width: min(100% - 28px, 1120px); padding-top: 38px; }
+  .hero-layout { grid-template-columns: 1fr; gap: 24px; }
+  .hero-portrait { justify-self: start; width: min(72vw, 260px); max-width: 260px; }
+  .city-ditty-publication-grid, .emerging-grid { grid-template-columns: 1fr; }
+  .theme-card, .emerging-card { padding: 68px 20px 22px; }
+  .site-footer { width: min(100% - 28px, 1120px); padding: 22px 0 26px; }
+  .site-footer-inner { align-items: flex-start; flex-direction: column; gap: 8px; }
+
+  .theme-number, .emerging-marker { left: 20px; top: 18px; }
+}
+
+.city-ditty-publication-card:target {
+  outline: 3px solid var(--blue-green);
+  outline-offset: 4px;
+}
+
+.city-ditty-publication-status {
+  color: var(--slate-blue);
+  font-size: 14px;
+  font-style: italic;
+}
+</style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<nav aria-label="Primary" class="site-nav">
+<div class="site-nav-inner">
+<a class="site-nav-brand" href="#top">Richard Yanaky</a>
+<div class="site-nav-links">
+<a href="#about">About</a>
+<a href="#research-overview">Research Overview</a>
+<a href="#core-themes">Research Areas</a>
+<a href="#research-outputs">Research Outputs</a>
+<a class="site-nav-project-link" href="https://soundkeeping.github.io/cityditty/" aria-label="City Ditty" title="City Ditty"><img class="site-nav-project-wordmark" src="https://soundkeeping.github.io/cityditty/assets/images/branding/city-ditty-wordmark.png" alt=""/></a>
+<a href="documents/Yanaky_Richard_CV.pdf">CV</a>
+</div>
+<details class="site-menu">
+<summary><span aria-hidden="true" class="hamburger"><span></span><span></span><span></span></span><span>Menu</span></summary>
+<div class="site-menu-panel">
+<a href="#about">About</a>
+<a href="#research-overview">Research Overview</a>
+<a href="#core-themes">Research Areas</a>
+<a href="#research-outputs">Research Outputs</a>
+<a class="site-nav-project-link" href="https://soundkeeping.github.io/cityditty/" aria-label="City Ditty" title="City Ditty"><img class="site-nav-project-wordmark" src="https://soundkeeping.github.io/cityditty/assets/images/branding/city-ditty-wordmark.png" alt=""/></a>
+<a href="documents/Yanaky_Richard_CV.pdf">CV</a>
+</div>
+</details>
+</div>
+</nav>
+<main id="main-content" tabindex="-1">
+<div class="container">
+<header class="hero" id="top">
+<div class="hero-layout">
+<div class="hero-copy">
+<h1>Richard Yanaky</h1>
+<p class="hero-identity">Interaction Researcher and Designer</p>
+<p class="hero-email"><a class="contact-email-link" href="#" title="Email Richard Yanaky">richard.yanaky (at) mail.mcgill.ca</a></p>
+<div aria-label="Scholarly profiles" class="profile-icons">
+<a aria-label="ResearchGate profile" class="profile-icon-link" href="https://www.researchgate.net/profile/Richard-Yanaky-2" rel="me noopener noreferrer" target="_blank" title="ResearchGate"><img alt="" src="assets/icons/researchgate.svg"/></a>
+<a aria-label="Google Scholar profile" class="profile-icon-link" href="https://scholar.google.ca/citations?user=Tn1kFyMAAAAJ&amp;h" rel="me noopener noreferrer" target="_blank" title="Google Scholar"><img alt="" src="assets/icons/google-scholar.svg"/></a>
+<a aria-label="ORCID profile" class="profile-icon-link" href="https://orcid.org/0000-0003-3534-5116" rel="me noopener noreferrer" target="_blank" title="ORCID"><img alt="" src="assets/icons/orcid.svg"/></a>
+<a aria-label="LinkedIn profile" class="profile-icon-link" href="https://ca.linkedin.com/in/richard-yanaky-22806464" rel="me noopener noreferrer" target="_blank" title="LinkedIn"><img alt="" src="assets/icons/linkedin.svg"/></a>
+<a aria-label="Curriculum vitae" class="profile-icon-link cv-profile-icon" href="documents/Yanaky_Richard_CV.pdf" title="CV"><img alt="" src="assets/icons/cv-standard.svg"/></a>
+</div>
+</div>
+<div class="hero-portrait"><img src="assets/icons/RY.jpg" alt="Portrait of Richard Yanaky"/></div>
+</div>
+</header>
+<section class="section" id="about">
+<h2 class="section-title">About</h2>
+<div class="section-intro">
+<p>Hello! I’m an interaction researcher and designer interested in how interactive and immersive systems can help people understand complex issues, explore alternatives, and put specialized knowledge into practice. Much of my work has focused on urban soundscapes: how we can help a wider range of people hear, explore, and participate in decisions about how our cities sound.</p>
+<p>I’m currently completing a PhD in Information Studies at McGill University. My work in interactive-system design crosses HCI, soundscape, learning, knowledge translation, and professional practice. I’m particularly interested in research that crosses disciplinary boundaries and uses technology to make new forms of understanding and action possible. I also used to be a linguist, which still finds its way into my work in more subtle ways.</p>
+<p class="affiliations"><strong>Affiliations:</strong> <a href="https://www.mcgill.ca/sis/" rel="noopener noreferrer" target="_blank">McGill School of Information Studies</a> · <a href="https://mil.mcgill.ca/" rel="noopener noreferrer" target="_blank">Multimodal Interaction Lab</a> · <a href="https://www.cirmmt.org/" rel="noopener noreferrer" target="_blank">Centre for Interdisciplinary Research in Music Media and Technology (CIRMMT)</a> · <a href="https://www.sounds-in-the-city.org/" rel="noopener noreferrer" target="_blank">Sounds in the City</a> · <a href="https://airs.quebec/en/" rel="noopener noreferrer" target="_blank">AIRS thematic network</a></p>
+</div>
+</section>
+<hr/>
+<section class="section" id="research-overview">
+<h2 class="section-title">Research Overview</h2>
+<div class="section-intro">
+<p>My research begins with the challenge of urban sound: how we can move beyond controlling unwanted noise toward creating better-sounding, healthier cities. Addressing this challenge requires more than technical knowledge about sound. It raises broader questions about how people understand complex issues, how specialized knowledge is represented and shared, how alternatives can be explored and compared, and how new approaches can become meaningful within professional and institutional contexts.</p>
+<p>My research has grown from these questions. Through the design and study of interactive and immersive systems, I investigate how complex and specialized knowledge can be made more experiential, understandable, and usable. Beginning from soundscape, this work connects human–computer interaction and Information Studies with questions of knowledge translation, capacity building, and professional practice, while increasingly engaging with broader socio-technical questions about how people, technologies, expertise, and organizations interact.</p>
+</div>
+<div class="city-card" id="city-ditty">
+<img class="city-card-wordmark" src="https://soundkeeping.github.io/cityditty/assets/images/branding/city-ditty-wordmark.png" alt="City Ditty"/>
+<p>City Ditty is the primary research platform through which many of these questions have been developed and studied. The interactive soundscape simulator allows people to experience, explore, design, and evaluate possible urban soundscapes, while providing a shared platform for research into interaction, learning, collaboration, and professional practice.</p>
+<p class="city-cta"><a href="https://soundkeeping.github.io/cityditty/">Explore City Ditty →</a></p>
+</div>
+<p class="section-intro">The research themes below emerged through this problem-oriented programme and describe several of the broader questions that now extend beyond any single system or study.</p>
+</section>
+<hr/>
+<section class="section" id="core-themes">
+<h2 class="section-title">Core Research Themes</h2>
+<p class="section-intro">My current research can be organized around four closely connected themes: <strong>Human–Soundscape Interaction</strong>, <strong>Interactive &amp; Immersive Systems</strong>, <strong>Enabling Participation</strong>, and <strong>Research into Practice</strong>. Together, they trace a progression from soundscape interaction and system design to broader questions of participation and professional practice.</p>
+<div class="theme-grid">
+<article class="theme-card">
+<span class="theme-number">1</span>
+<h3>Human–Soundscape Interaction</h3>
+<p>Urban soundscape is the primary problem domain from which much of my research has developed. I explore how interactive systems can help people experience, investigate, and shape soundscape environments.</p>
+<ul class="theme-points">
+<li><strong>Sound-based interaction:</strong> Investigate how interactive systems can support active engagement with sound and listening within environmental context.</li>
+<li><strong>Beyond simulation:</strong> Move from representing possible soundscapes to interacting with, changing, and comparing them.</li>
+<li><strong>People, technology, and environment:</strong> Examine how interaction shapes the way soundscapes are experienced, understood, and explored.</li>
+</ul>
+<aside aria-label="Related research" class="city-ditty-related-research">
+<p class="city-ditty-related-research-title">Related research</p>
+<ul>
+<li><a href="#pub-city-ditty-2023">Initial City Ditty evaluation</a> — demonstrates how non-specialists can learn soundscape concepts, manipulate a simulated environment, and create their own soundscape designs through interaction.</li>
+<li><a href="#pub-sound-based-interaction-2024">Sound-based interaction chapter</a> — places this work within a broader HCI perspective on interaction through sound, spanning soundscapes, interactive sound art, and digital musical instruments.</li>
+</ul>
+</aside>
+</article>
+<article class="theme-card">
+<span class="theme-number">2</span>
+<h3>Interactive &amp; Immersive Systems</h3>
+<p>Working through these soundscape problems has raised broader questions about interactive and immersive system design. I examine how technologies and representations can be matched to what people need to understand or do.</p>
+<ul class="theme-points">
+<li><strong>Problem-led design:</strong> Choose and develop technology in response to the problem and activity it needs to support.</li>
+<li><strong>Representation for interaction:</strong> Design information so people can explore, manipulate, compare, and act on it.</li>
+<li><strong>Modality for the activity:</strong> Desktop, immersive VR, and other interfaces offer different strengths; greater immersion is not inherently better.</li>
+</ul>
+<aside aria-label="Related research" class="city-ditty-related-research">
+<p class="city-ditty-related-research-title">Related research</p>
+<ul>
+<li><a href="#pub-desktop-hmd-2026">Desktop–HMD comparison</a> — compares interaction, presence, spatial understanding, engagement, usability, and listening experience across desktop and immersive VR.</li>
+<li><a href="#pub-vrst-2025">City Ditty in immersive VR</a> — introduces the HMD version of City Ditty through a VRST demo and poster, presenting the platform and its broader uses in soundscape design, knowledge sharing, and professional contexts.</li>
+<li><a href="#pub-realistic-enough-2024">Soundscape simulator design considerations</a> — examines how much and what kinds of realism are appropriate in soundscape simulation through the lenses of plausibility, hyperrealism, and ecological validity.</li>
+</ul>
+</aside>
+</article>
+<article class="theme-card">
+<span class="theme-number">3</span>
+<h3>Enabling Participation</h3>
+<p>I explore how interactive and experiential approaches can widen meaningful participation in complex issues by improving access to specialized knowledge and building people's capacity to engage with it.</p>
+<ul class="theme-points">
+<li><strong>Knowledge translation:</strong> Represent specialized knowledge in forms that are easier to understand, experience, and communicate across different areas of expertise.</li>
+<li><strong>Capacity building:</strong> Support learning, awareness, and confidence so people are better equipped to explore alternatives and engage with complex issues.</li>
+<li><strong>Shared understanding:</strong> Create common points of reference that help people with different expertise communicate, compare possibilities, and participate in discussion and decision-making.</li>
+</ul>
+<aside aria-label="Related research" class="city-ditty-related-research">
+<p class="city-ditty-related-research-title">Related research</p>
+<ul>
+<li><a href="#pub-needs-assessment-2020">Early professional needs assessment</a> — uses a knowledge-mobilization workshop with professionals of the built environment to identify needs and requirements that informed the first version of City Ditty.</li>
+<li><a href="#pub-park-competition-2025">Interdisciplinary urban park design</a> — demonstrates a site-specific workflow in which collaborators adapt and use City Ditty to support soundscape design within a new urban context.</li>
+<li><a href="#pub-music-evaluation-2025">Comparative soundscape experiment</a> — demonstrates how environments created in City Ditty can be reused as controlled study conditions, lowering technical barriers for researchers conducting interactive soundscape studies.</li>
+</ul>
+</aside>
+</article>
+<article class="theme-card">
+<span class="theme-number">4</span>
+<h3>Research into Practice</h3>
+<p>I examine how interactive systems and research knowledge can connect meaningfully with professional activity, collaboration, and decision-making.</p>
+<ul class="theme-points">
+<li><strong>Earlier consideration:</strong> Support exploration of complex issues while alternatives are still open to discussion and change.</li>
+<li><strong>Complementing expertise:</strong> Help non-specialists engage more effectively with specialized issues without replacing professional judgment.</li>
+<li><strong>Institutional support:</strong> Consider how roles, resources, organizational support, technical infrastructure, and existing ways of working shape what is possible.</li>
+</ul>
+<aside aria-label="Related research" class="city-ditty-related-research">
+<p class="city-ditty-related-research-title">Related research</p>
+<ul>
+<li><a href="#pub-stakeholder-2026">City-maker stakeholder study</a> — examines how interactive soundscape simulation can support capacity building among professionals through education, communication, workflow integration, and professional practice.</li>
+<li><a href="#pub-professional-sketchpads-2023">Emerging technologies and soundscape practice</a> — examines professional soundscape practice through an emerging-technologies framework, considering how interactive simulation could challenge established approaches and fit within the wider systemic environment.</li>
+</ul>
+</aside>
+</article>
+</div>
+</section>
+<hr/>
+<section class="section" id="emerging-directions">
+<h2 class="section-title">Emerging Directions</h2>
+<p class="section-intro">Alongside these core themes, several newer directions extend the research into additional applications, contexts, and questions. Some build directly from City Ditty, while others reflect broader methodological, educational, and theoretical questions arising from the work.</p>
+<div class="emerging-grid">
+<article class="emerging-card">
+<span aria-hidden="true" class="emerging-marker"></span>
+<h3>Interactive Soundscape Evaluation</h3>
+<p>City Ditty is also being developed as a platform for researchers to create and run comparative soundscape studies.</p>
+<ul class="theme-points">
+<li><strong>From design to evaluation:</strong> Reuse and modify designed soundscape environments as controlled study conditions.</li>
+<li><strong>Lower technical barriers:</strong> Enable researchers to configure comparative studies without building a new interactive system for each experiment.</li>
+<li><strong>Replication and extension:</strong> Support studies that can be repeated, adapted, and extended across new participants, settings, and research questions.</li>
+</ul>
+<aside aria-label="Related research" class="city-ditty-related-research">
+<p class="city-ditty-related-research-title">Related research</p>
+<ul><li><a href="#pub-music-evaluation-2025">Comparative soundscape experiment</a> — demonstrates how environments created in City Ditty can be reused as controlled study conditions for comparative evaluation.</li></ul>
+</aside>
+</article>
+<article class="emerging-card">
+<span aria-hidden="true" class="emerging-marker"></span>
+<h3>Localization &amp; Cross-Cultural Research</h3>
+<p>City Ditty now supports localization for different geographic and cultural contexts, allowing collaborators to develop place-specific environments and content that can be integrated into the broader platform.</p>
+<ul class="theme-points">
+<li><strong>Localization:</strong> Support collaborators in adapting environments, sound sources, and activities to reflect local people and places.</li>
+<li><strong>Context matters:</strong> Recognize that soundscapes are shaped by local activities, meanings, and environmental conditions.</li>
+<li><strong>Cross-cultural potential:</strong> Multiple localized versions may support future comparisons across populations and cultural settings.</li>
+</ul>
+<aside aria-label="Related research" class="city-ditty-related-research">
+<p class="city-ditty-related-research-title">Related research</p>
+<ul><li><a href="#pub-park-competition-2025">Locale adaptation and simulation setup</a> — documents practical steps to adapt City Ditty to a new urban and soundscape context using local spatial, audio, and visual assets.</li><li><a href="#pub-soundwalks-auralisation-2026">Participatory design competition</a> — documents the interdisciplinary workshop and student competition that followed the localized simulation setup.</li></ul>
+</aside>
+</article>
+<article class="emerging-card">
+<span aria-hidden="true" class="emerging-marker"></span>
+<h3>Interdisciplinary Research Practice</h3>
+<p>I am exploring how interdisciplinary design research affects students and early-career researchers, particularly when projects require them to combine technical development, design, and deep domain knowledge.</p>
+<ul class="theme-points">
+<li><strong>Researcher experience:</strong> Examine the demands created by unusually broad skill sets, responsibilities, and interdisciplinary roles.</li>
+<li><strong>Training and transition:</strong> Consider how graduate education prepares researchers for this work and for the career transitions that follow.</li>
+<li><strong>Academic structures:</strong> Explore how funding, supervision, continuity, and institutional pathways can better support both researchers and the work they produce.</li>
+</ul>
+<aside aria-label="Related research" class="city-ditty-related-research">
+<p class="city-ditty-related-research-title">Related research</p>
+<ul><li><a href="#pub-educhi-2026">Extensible by Design, Unsustainable by Structure</a> — examines tensions faced by graduate researchers developing extensible interdisciplinary artefacts, including responsibility, continuity, funding, disciplinary fit, and career transitions.</li></ul>
+</aside>
+</article>
+<article class="emerging-card">
+<span aria-hidden="true" class="emerging-marker"></span>
+<h3>Socio-Technical Design</h3>
+<p>I am developing a broader socio-technical design framework that draws together lessons from across my research programme.</p>
+<ul class="theme-points">
+<li><strong>Beyond the artefact:</strong> Consider interactive systems as part of wider environments shaped by people, practices, organizations, and resources.</li>
+<li><strong>Design for context:</strong> Account for the institutional and practical conditions that influence how systems are used and sustained.</li>
+<li><strong>From prototype to practice:</strong> Examine what is needed for research systems to contribute meaningfully beyond a successful study or demonstration.</li>
+</ul>
+<aside aria-label="Related research" class="city-ditty-related-research">
+<p class="city-ditty-related-research-title">Related research</p>
+<p>Stay tuned!</p>
+</aside>
+</article>
+</div>
+</section>
+<hr/>
+
+
+<section class="section city-ditty-publication-section" id="research-outputs">
+<h2 class="section-title">Selected Research Outputs</h2>
+<p class="city-ditty-publication-intro">Below are selected research outputs referenced across the themes above. See my <a href="documents/Yanaky_Richard_CV.pdf">CV</a> for a complete record.</p>
+<div class="city-ditty-publication-grid">
+<article class="city-ditty-publication-card" id="pub-stakeholder-2026">
+<span class="city-ditty-publication-type">Conference paper · 2026</span>
+<h3>Translating Soundscapes into Practice Using Virtual Reality: City Makers’ Insights on Interactive Soundscape Simulation</h3>
+<p class="city-ditty-publication-summary">Stakeholder study examining how city makers experienced guided soundscape activities and how interactive simulation could support soundscape capacity building through education, communication, workflow integration, and professional practice.</p>
+<p class="city-ditty-publication-meta">Yanaky, R., &amp; Guastavino, C. · <em>Documenta of Forum Acusticum 2026</em> · Graz, Austria</p>
+<div class="city-ditty-publication-actions"><span class="city-ditty-badge">Invited paper</span><span class="city-ditty-badge">Pre-print</span><a class="city-ditty-publication-link" href="https://dael.euracoustics.org/confs/fa2026/data/articles/000749.pdf" rel="noopener noreferrer" target="_blank">View pre-print ↗</a></div>
+</article>
+<article class="city-ditty-publication-card" id="pub-desktop-hmd-2026">
+<span class="city-ditty-publication-type">Conference paper · 2026</span>
+<h3>Interacting with Soundscapes in Virtual Reality: Desktop vs. Immersive VR</h3>
+<p class="city-ditty-publication-summary">Comparative study of desktop and head-mounted VR versions of City Ditty, examining interaction, presence, spatial understanding, engagement, usability, and listening experience.</p>
+<p class="city-ditty-publication-meta">Yanaky, R., Toffa, S., &amp; Guastavino, C. · <em>Documenta of Forum Acusticum 2026</em> · Graz, Austria</p>
+<div class="city-ditty-publication-actions"><span class="city-ditty-badge">Invited paper</span><span class="city-ditty-badge">Pre-print</span><a class="city-ditty-publication-link" href="https://dael.euracoustics.org/confs/fa2026/data/articles/000750.pdf" rel="noopener noreferrer" target="_blank">View pre-print ↗</a></div>
+</article>
+<article class="city-ditty-publication-card" id="pub-soundwalks-auralisation-2026">
+<span class="city-ditty-publication-type">Conference paper · 2026</span>
+<h3>From Soundwalks to Auralisation: A Participatory Workflow for Biophilic Soundscape Design in Urban Green Spaces Using City Ditty</h3>
+<p class="city-ditty-publication-summary">Follow-up to the INTER-NOISE 2025 methodology paper, extending the site-specific workflow into a participatory process that connects soundwalks, local recordings, virtual reconstruction, soundscape simulation, and urban redesign activities.</p>
+<p class="city-ditty-publication-meta">Kogan, P., Fuentes, L., Yanaky, R., Verdugo, D., Saavedra, I., Monsalve, J., Hidalgo, P., Vega, B., Bild, E., &amp; Guastavino, C. · <em>Documenta of Forum Acusticum 2026</em></p>
+<div class="city-ditty-publication-actions"><span class="city-ditty-badge">Pre-print</span><a class="city-ditty-publication-link" href="https://dael.euracoustics.org/confs/fa2026/data/articles/000756.pdf" rel="noopener noreferrer" target="_blank">View pre-print ↗</a></div>
+</article>
+<article class="city-ditty-publication-card" id="pub-educhi-2026">
+<span class="city-ditty-publication-type">Lightning talk · 2026</span>
+<h3>Extensible by Design, Unsustainable by Structure: Interdisciplinarity and Transition in Graduate Design Research</h3>
+<p class="city-ditty-publication-summary">Examines interdisciplinarity, graduate transitions, and the institutional, funding, and career structures supporting extensible design research.</p>
+<p class="city-ditty-publication-meta">Yanaky, R. · EduCHI 2026 · Toronto, Canada</p>
+<div class="city-ditty-publication-actions"><a class="city-ditty-publication-link" href="https://www.researchgate.net/publication/404740443_Extensible_by_Design_Unsustainable_by_Structure_Interdisciplinarity_and_Transition_in_Graduate_Design_Research" rel="noopener noreferrer" target="_blank">View research output ↗</a></div>
+</article>
+<article class="city-ditty-publication-card" id="pub-park-competition-2025">
+<span class="city-ditty-publication-type">Conference paper · 2025</span>
+<h3>Application of the City Ditty Soundscape Tool in an Interdisciplinary Urban Park Design Competition</h3>
+<p class="city-ditty-publication-summary">Methodology paper outlining a practical workflow for site-specific soundscape design: understand the goals and existing space, build the 3D environment, collect representative audio and source models, integrate them with City Ditty, then design, evaluate, and implement. The workflow is demonstrated through a biophilic redesign project for Parque O’Higgins in Santiago.</p>
+<p class="city-ditty-publication-meta">Yanaky, R., Fuentes, L., Verdugo, D., Monsalve, J., Vega, B., Villavicencio, C., Kogan, P., &amp; Guastavino, C. · INTER-NOISE 2025 · São Paulo, Brazil</p>
+<div class="city-ditty-publication-actions"><a class="city-ditty-publication-link" href="https://doi.org/10.3397/IN_2025_1095787" rel="noopener noreferrer" target="_blank">View publication ↗</a><a class="city-ditty-publication-link" href="https://www.researchgate.net/publication/393770459_Application_of_the_City_Ditty_soundscape_tool_in_an_interdisciplinary_urban_park_design_competition" rel="noopener noreferrer" target="_blank">Free full text ↗</a></div>
+</article>
+<article class="city-ditty-publication-card" id="pub-music-evaluation-2025">
+<span class="city-ditty-publication-type">Conference abstract · 2025</span>
+<h3>Effect of Music on the Quality of Urban Public Experience: A Virtual Reality Experiment</h3>
+<p class="city-ditty-publication-summary">Uses City Ditty to compare public-space soundscape conditions in VR and demonstrates how designed environments can be reused as controlled experimental scenarios.</p>
+<p class="city-ditty-publication-meta">Miao, C., Yanaky, R., &amp; Guastavino, C. · 56th Annual Conference of the Environmental Design Research Association (EDRA) · Halifax, Canada</p>
+<div class="city-ditty-publication-actions"><a class="city-ditty-publication-link" href="https://www.researchgate.net/publication/390805961_Effect_of_music_on_the_Quality_of_Urban_Public_Experience_a_virtual_reality_experiment" rel="noopener noreferrer" target="_blank">View abstract ↗</a><span class="city-ditty-publication-status">Expanded paper in preparation</span></div>
+</article>
+<article class="city-ditty-publication-card" id="pub-vrst-2025">
+<span class="city-ditty-publication-type">Demo paper &amp; poster · 2025</span>
+<h3>Virtual Reality for Urban Soundscape Design: Exploring Knowledge Sharing, Creation, and Workplace Integration</h3>
+<p class="city-ditty-publication-summary">Presents City Ditty as an interactive VR platform for soundscape design, knowledge sharing, and consideration of possible workplace integration.</p>
+<p class="city-ditty-publication-meta">Yanaky, R., &amp; Guastavino, C. · 31st ACM Symposium on Virtual Reality Software and Technology (VRST) · Montréal, Canada</p>
+<div class="city-ditty-publication-actions"><a class="city-ditty-publication-link" href="https://doi.org/10.1145/3756884.3768399" rel="noopener noreferrer" target="_blank">View publication ↗</a></div>
+</article>
+<article class="city-ditty-publication-card" id="pub-sound-based-interaction-2024">
+<span class="city-ditty-publication-type">Book chapter · 2024</span>
+<h3>Sound-Based Interaction</h3>
+<p class="city-ditty-publication-summary">Examines sound-based interaction across scales: city-wide soundscapes, interactive sound-art installations in public spaces, and individual digital musical instruments (DMIs), highlighting shared HCI questions across these different forms of listening and action.</p>
+<p class="city-ditty-publication-meta">Yanaky, R., Reimer, P. J. C., Fraisse, V., Wanderley, M., &amp; Guastavino, C. · In <em>Human Computer Interaction: Interaction Technologies and Techniques</em> · CRC Press</p>
+<div class="city-ditty-publication-actions"><a class="city-ditty-publication-link" href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003490678-8/sound-based-interaction-richard-yanaky-charles-reimer-val%C3%A9rian-fraisse-marcelo-wanderley-catherine-guastavino" rel="noopener noreferrer" target="_blank">View chapter ↗</a></div>
+</article>
+<article class="city-ditty-publication-card" id="pub-realistic-enough-2024">
+<span class="city-ditty-publication-type">Conference paper · 2024</span>
+<h3>Realistic Enough? Design Considerations for Soundscape Simulators</h3>
+<p class="city-ditty-publication-summary">Considers plausibility, hyperrealism, and ecological validity to develop three lenses for design, helping frame how much and what kinds of realism are appropriate for different users, purposes, and practical constraints.</p>
+<p class="city-ditty-publication-meta">Yanaky, R., &amp; Guastavino, C. · <em>Canadian Acoustics</em>, 52(1)</p>
+<div class="city-ditty-publication-actions"><a class="city-ditty-publication-link" href="https://jcaa.caa-aca.ca/index.php/jcaa/article/view/4183" rel="noopener noreferrer" target="_blank">View publication ↗</a><span class="city-ditty-badge">Second Place Paper/Presentation Award · Architectural Acoustics (ASA)</span></div>
+</article>
+<article class="city-ditty-publication-card" id="pub-city-ditty-2023">
+<span class="city-ditty-publication-type">Journal article · 2023</span>
+<h3>City Ditty: An Immersive Soundscape Sketchpad for Professionals of the Built Environment</h3>
+<p class="city-ditty-publication-summary">The first published evaluation of the desktop version of City Ditty, showing that non-specialists could learn key soundscape concepts, manipulate the simulator, and create simple soundscape designs in under an hour.</p>
+<p class="city-ditty-publication-meta">Yanaky, R., Tyler, D., &amp; Guastavino, C. · <em>Applied Sciences</em>, 13(3), 1611</p>
+<p class="city-ditty-publication-meta">Special issue: <a href="https://www.mdpi.com/journal/applsci/special_issues/ETR6B083U1" rel="noopener noreferrer" target="_blank"><em>Measurement, Simulation and Design of Sound in Urban Spaces</em> ↗</a></p>
+<div class="city-ditty-publication-actions"><a class="city-ditty-publication-link" href="https://doi.org/10.3390/app13031611" rel="noopener noreferrer" target="_blank">Read publication ↗</a></div>
+</article>
+<article class="city-ditty-publication-card" id="pub-professional-sketchpads-2023">
+<span class="city-ditty-publication-type">Conference paper · 2023</span>
+<h3>Exploring the Use of Soundscape Sketchpads with Professionals</h3>
+<p class="city-ditty-publication-summary">Presents City Ditty’s enhanced audio renderer and examines soundscape practice through an emerging-technologies framework, using interactive simulation to challenge status-quo approaches to professional soundscape work.</p>
+<p class="city-ditty-publication-meta">Yanaky, R., Grazioli, G., Zhang, KYY., &amp; Guastavino, C. · INTER-NOISE 2023 · Chiba, Japan</p>
+<div class="city-ditty-publication-actions"><a class="city-ditty-publication-link" href="https://doi.org/10.3397/IN_2023_0322" rel="noopener noreferrer" target="_blank">View publication ↗</a><a class="city-ditty-publication-link" href="https://www.researchgate.net/publication/374750772_Exploring_the_use_of_soundscape_sketchpads_with_professionals" rel="noopener noreferrer" target="_blank">Free full text ↗</a></div>
+</article>
+<article class="city-ditty-publication-card" id="pub-needs-assessment-2020">
+<span class="city-ditty-publication-type">Conference paper · 2020</span>
+<h3>An Interactive Soundscape Simulator for Professionals of the Built Environment</h3>
+<p class="city-ditty-publication-summary">Preliminary user-needs assessment conducted through a knowledge-mobilization workshop with professionals of the built environment. The findings helped establish requirements that fed into the design of the first version of City Ditty.</p>
+<p class="city-ditty-publication-meta">Yanaky, R., Tarlao, C., &amp; Guastavino, C. · International Workshop on Haptic and Audio Interaction Design (HAID 2020) · Montréal, Canada</p>
+<div class="city-ditty-publication-actions"><span class="city-ditty-badge">Early Conceptual Work</span><a class="city-ditty-publication-link" href="https://hal.science/HAID2020/hal-02901211v1" rel="noopener noreferrer" target="_blank">View publication ↗</a></div>
+</article>
+</div>
+</section></div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p class="site-footer-meta"><span class="site-footer-name">Richard Yanaky</span> · © 2026 Richard Yanaky</p>
+    <a class="site-footer-top" href="#top">Back to top ↑</a>
+  </div>
+</footer>
+<script>
+(function () {
+  var links = document.querySelectorAll('.contact-email-link');
+  if (!links.length) return;
+  var scheme = String.fromCharCode(109,97,105,108,116,111,58);
+  var address = String.fromCharCode(114,105,99,104,97,114,100,46,121,97,110,97,107,121,64,109,97,105,108,46,109,99,103,105,108,108,46,99,97);
+  links.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      window.location.href = scheme + address;
+    });
+  });
+
+  var menu = document.querySelector('.site-menu');
+  if (menu) {
+    menu.querySelectorAll('.site-menu-panel a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        menu.removeAttribute('open');
+      });
+    });
+  }
+}());
+</script>
 </body>
 </html>
