@@ -442,7 +442,7 @@ hr {
 }
 .city-ditty-publication-card {
   scroll-margin-top: 28px;
-  padding: 22px;
+  padding: 24px;
   border: 1px solid var(--border);
   border-top: 4px solid var(--deep-blue);
   background: #fff;
@@ -462,7 +462,10 @@ hr {
   font-size: 21px;
   line-height: 1.28;
 }
-.city-ditty-publication-summary { margin: 0 0 12px; }
+.city-ditty-publication-summary {
+  margin: 14px 0 18px 14px;
+  padding-right: 6px;
+}
 .city-ditty-publication-meta {
   margin: 0 0 12px;
   color: var(--slate-blue);
@@ -503,10 +506,16 @@ hr {
   position: absolute;
   left: 24px;
   top: 24px;
+  display: grid;
   width: 38px;
   height: 38px;
+  place-items: center;
   border-radius: 50%;
   background: var(--deep-blue);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1;
 }
 .emerging-card:nth-child(2) .emerging-marker { background: var(--blue-green); }
 .emerging-card:nth-child(3) .emerging-marker { background: var(--slate-blue); }
@@ -570,6 +579,7 @@ hr {
   .site-footer-inner { align-items: flex-start; flex-direction: column; gap: 8px; }
 
   .theme-number, .emerging-marker { left: 20px; top: 18px; }
+  .city-ditty-publication-summary { margin-left: 10px; }
 }
 
 .city-ditty-publication-card:target {
@@ -582,6 +592,33 @@ hr {
   font-size: 14px;
   font-style: italic;
 }
+
+/* Refined desktop text alignment.
+   Card dimensions remain unchanged. Core themes, Emerging Directions,
+   Related Research, and City Ditty share a slightly earlier right text edge. */
+@media (min-width: 681px) {
+  .theme-card > p,
+  .emerging-card > p,
+  .theme-card > .theme-points,
+  .emerging-card > .theme-points,
+  .city-card > p {
+    padding-right: calc(64px + 6ch);
+  }
+
+  .theme-card > .city-ditty-related-research,
+  .emerging-card > .city-ditty-related-research {
+    padding-right: calc(64px + 6ch);
+  }
+}
+
+/* On wide desktop layouts, section-opening prose aligns just inside
+   the left edge of the hero portrait rather than extending beneath it. */
+@media (min-width: 1180px) {
+  .section-intro {
+    max-width: 860px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -734,7 +771,7 @@ hr {
 <p class="section-intro">Alongside these core themes, several newer directions extend the research into additional applications, contexts, and questions. Some build directly from City Ditty, while others reflect broader methodological, educational, and theoretical questions arising from the work.</p>
 <div class="emerging-grid">
 <article class="emerging-card">
-<span aria-hidden="true" class="emerging-marker"></span>
+<span aria-hidden="true" class="emerging-marker">✦</span>
 <h3>Interactive Soundscape Evaluation</h3>
 <p>City Ditty is also being developed as a platform for researchers to create and run comparative soundscape studies.</p>
 <ul class="theme-points">
@@ -748,7 +785,7 @@ hr {
 </aside>
 </article>
 <article class="emerging-card">
-<span aria-hidden="true" class="emerging-marker"></span>
+<span aria-hidden="true" class="emerging-marker">✦</span>
 <h3>Localization &amp; Cross-Cultural Research</h3>
 <p>City Ditty now supports localization for different geographic and cultural contexts, allowing collaborators to develop place-specific environments and content that can be integrated into the broader platform.</p>
 <ul class="theme-points">
@@ -762,7 +799,7 @@ hr {
 </aside>
 </article>
 <article class="emerging-card">
-<span aria-hidden="true" class="emerging-marker"></span>
+<span aria-hidden="true" class="emerging-marker">✦</span>
 <h3>Interdisciplinary Research Practice</h3>
 <p>I am exploring how interdisciplinary design research affects students and early-career researchers, particularly when projects require them to combine technical development, design, and deep domain knowledge.</p>
 <ul class="theme-points">
@@ -776,7 +813,7 @@ hr {
 </aside>
 </article>
 <article class="emerging-card">
-<span aria-hidden="true" class="emerging-marker"></span>
+<span aria-hidden="true" class="emerging-marker">✦</span>
 <h3>Socio-Technical Design</h3>
 <p>I am developing a broader socio-technical design framework that draws together lessons from across my research programme.</p>
 <ul class="theme-points">
